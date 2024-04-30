@@ -1,0 +1,379 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CodeSecurity&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MemuPlay.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExistsFile&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoVDI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoHorizonWeb.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HorizonFlagPage&Sequence_1",
+        "HorionFlagTabla&Sequence_1",
+        "HorizonFlag5&Sequence_1",
+        "HorizonFlag4&Sequence_1",
+        "ExtractDataTable&Sequence_12",
+        "HorizonFlag3&Sequence_1",
+        "HorizonFlag2&Sequence_1",
+        "GetTextVDI&Sequence_4",
+        "WriteText&Sequence_4",
+        "INC&Sequence_4",
+        "HorizonFlag&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_HorizonFlag"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SequencePBVDIHorion.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CodeSecurity&Sequence_2",
+        "GetTextVDI&Sequence_3",
+        "WriteText&Sequence_3",
+        "INC&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoHorizonAppDesktop.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PB&Sequence_2",
+        "TiendaArray&Sequence_2",
+        "SiteArray&Sequence_2",
+        "TiendaString&Sequence_2",
+        "Separador&Sequence_2",
+        "Site&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SequenseSplit.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PbSplit&Sequence_1",
+        "PB&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoBuscarExcel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoLogueo3Walmart.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CodeSecurity&Sequence_1",
+        "FlagTickets&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MemuCode.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MemuFlag3&Sequence_1",
+        "MemuFlag2&Sequence_1",
+        "MemuFlag&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_CodeSecurityArgumentMemuCode"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkspaceWalmart.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HorizonFlag&Sequence_1",
+        "WalmartFlag&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_HorizonFlag",
+        "in_CodeSecurityArgumentWorkspaceWalmart"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoSemiCompleto.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NumeroTicket&Sequence_1",
+        "Priority&Sequence_1",
+        "ShortDescription&Sequence_1",
+        "FlagTickets&Sequence_2",
+        "ExtractDataTable&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoSemiCompleto2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NumeroTicket&Sequence_1",
+        "Priority&Sequence_1",
+        "ShortDescription&Sequence_1",
+        "FlagTickets&Sequence_2",
+        "ExtractDataTable&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MemuCodeV2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MemuFlag&Sequence_1",
+        "MemuFlag2&Sequence_1",
+        "MemuFlag3&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_CodeSecurityArgumentMemuCode"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkspaceWalmartV2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "WalmartFlag&Sequence_1",
+        "HorizonFlag&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_CodeSecurityArgumentWorkspaceWalmart",
+        "out_HorizonFlag"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoHorizonWebV2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HorizonFlag&Sequence_1",
+        "HorizonFlag2&Sequence_1",
+        "HorizonFlag3&Sequence_1",
+        "HorizonFlag4&Sequence_1",
+        "HorizonFlag5&Sequence_1",
+        "HorionFlagTabla&Sequence_1",
+        "GetTextVDI&Sequence_4",
+        "WriteText&Sequence_4",
+        "INC&Sequence_4",
+        "ExtractDataTable&Sequence_12"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_HorizonFlag"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoBuscarExcelV2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ShortDescription&Sequence_1",
+        "Priority&Sequence_1",
+        "NumeroTicket&Sequence_1",
+        "FlagTickets&Sequence_1",
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoHorizonWebV3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HorizonFlagPage&Sequence_1",
+        "HorizonFlag&Sequence_1",
+        "HorizonFlag2&Sequence_1",
+        "HorizonFlag3&Sequence_1",
+        "HorizonFlag4&Sequence_1",
+        "HorizonFlag5&Sequence_1",
+        "HorionFlagTabla&Sequence_1",
+        "GetTextVDI&Sequence_4",
+        "WriteText&Sequence_4",
+        "INC&Sequence_4",
+        "ExtractDataTable&Sequence_12"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_HorizonFlag"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoLogueo2Walmart.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CodeSecurity&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "input.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "text&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "navegador.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "clickinput.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TryCatch.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExampleTryCatch.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CodeSecurity&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MemuCodeVTryCatch.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MemuFlag&Sequence_1",
+        "MemuFlag2&Sequence_1",
+        "MemuFlag3&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_CodeSecurityArgumentMemuCode"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MemuCodeV3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MemuFlag3&Sequence_1",
+        "MemuFlag2&Sequence_1",
+        "MemuFlag&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_CodeSecurityArgumentMemuCode"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoBuscarExcelV3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1",
+        "FlagTickets&Sequence_1",
+        "NumeroTicket&Sequence_1",
+        "Priority&Sequence_1",
+        "ShortDescription&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkspaceWalmartV3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "WalmartFlag&Sequence_1",
+        "HorizonFlag&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_CodeSecurityArgumentWorkspaceWalmart",
+        "out_HorizonFlag"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PageCode.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="input" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="2166,1249.3333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="input" sap:VirtualizedContainerService.HintSize="512,1184.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="text" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: VMware Horizon" sap:VirtualizedContainerService.HintSize="450,815.3333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="564e24da-f9bb-47d1-8fc8-848d633299a1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,596.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Work notes'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="564e24da-f9bb-47d1-8fc8-848d633299a1" Text="escritura1234....-- -" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://workspacehzex.wal-mart.com/portal/webclient/#/desktop" CvElementArea="874, 809, 1670, 100" CvType="InputBox" DesignTimeRectangle="877, 808, 1667, 99" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Work notes'" Guid="cb3113aa-1edc-4f71-966d-71f9788d6a6a" InformativeScreenshot="4666eac84bb15b88aee8d6b2e6ee117c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='AppLaunchWindow' title='VMware Horizon' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="749, 827, 110, 19" CvTextArgument="Work notes" CvType="Text" DesignTimeRectangle="749, 826, 110, 20" ElementType="Text" FriendlyName="'Work notes'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,65.33333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,330" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Assignment group'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,245.33333333333334" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="564e24da-f9bb-47d1-8fc8-848d633299a1" Text="MX - Service Desk" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://workspacehzex.wal-mart.com/portal/webclient/#/desktop" CvElementArea="2098, 1017, 468, 52" CvType="InputBox" DesignTimeRectangle="2099, 1017, 437, 51" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'* Assignment group'" Guid="46928303-c9fe-4594-abd4-c78d0f611fa2" InformativeScreenshot="194c967f3207278c1d637528aa24103d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='AppLaunchWindow' title='VMware Horizon' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="1890, 1034, 198, 24" CvTextArgument="* Assignment group" CvType="Text" DesignTimeRectangle="1890, 1033, 198, 24" ElementType="Text" FriendlyName="'* Assignment group'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            <uix:Target CvElementArea="2583, 1017, 54, 53" CvType="Button" DesignTimeRectangle="2584, 1016, 54, 53" ElementType="Button" FriendlyName="'msedge.exe VMware'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,65.33333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,266.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'msedge.exe VMware'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="564e24da-f9bb-47d1-8fc8-848d633299a1" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://workspacehzex.wal-mart.com/portal/webclient/#/desktop" CvElementArea="2522, 1018, 50, 50" CvType="Button" DesignTimeRectangle="2523, 1017, 51, 51" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'msedge.exe VMware'" Guid="d3e1534e-d57a-4479-882a-32fd84a90610" InformativeScreenshot="ae1e0a528bae60457d31caec28ee6815.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='AppLaunchWindow' title='VMware Horizon' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvElementArea="2583, 1017, 53, 53" CvType="Button" DesignTimeRectangle="2584, 1016, 54, 53" ElementType="Button" FriendlyName="'msedge.exe VMware'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            <uix:Target CvTextArea="1890, 1034, 198, 24" CvTextArgument="* Assignment group" CvType="Text" DesignTimeRectangle="1890, 1033, 198, 24" ElementType="Text" FriendlyName="'* Assignment group'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            <uix:Target CvElementArea="2096, 959, 478, 54" CvType="InputBox" DesignTimeRectangle="2099, 958, 476, 54" ElementType="InputBox" FriendlyName="'msedge.exe VMware'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,65.33333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,330" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,245.33333333333334" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="564e24da-f9bb-47d1-8fc8-848d633299a1" Text="MX - TI - IKUSI" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://workspacehzex.wal-mart.com/portal/webclient/#/desktop" CvElementArea="1702, 562, 226, 50" CvType="InputBox" DesignTimeRectangle="1703, 561, 226, 50" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Search'" Guid="c55efa95-7695-4bd0-81e9-55186cbbd750" InformativeScreenshot="6de04305c8ddfb6df083314841e6d40f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='AppLaunchWindow' title='VMware Horizon' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="1710, 576, 64, 21" CvTextArgument="Search" CvType="Text" DesignTimeRectangle="1710, 576, 66, 21" ElementType="Text" FriendlyName="'Search'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            <uix:Target CvElementArea="1552, 562, 152, 50" CvType="InputBox" DesignTimeRectangle="1553, 561, 152, 50" ElementType="InputBox" FriendlyName="'msedge.exe VMware'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,50.666666666666664" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,1228.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence sap:VirtualizedContainerService.HintSize="450,1144" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'msedge.exe VMware'" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="564e24da-f9bb-47d1-8fc8-848d633299a1" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://workspacehzex.wal-mart.com/portal/webclient/#/desktop" CvElementArea="1424, 654, 58, 72" CvType="Icon" DesignTimeRectangle="1422, 652, 62, 76" DesignTimeScaleFactor="1.5" ElementType="Icon" FriendlyName="'msedge.exe VMware'" Guid="e6a36ea5-fc70-499c-8d22-447d7ee3c201" ImageBase64="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" InformativeScreenshot="362be718dfd63250b2be6b8f07dedce0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='AppLaunchWindow' title='VMware Horizon' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Edit'" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="564e24da-f9bb-47d1-8fc8-848d633299a1" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://workspacehzex.wal-mart.com/portal/webclient/#/desktop" CvTextArea="492, 474, 205, 21" CvType="AnyWordGroup" DesignTimeRectangle="492, 475, 207, 20" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'msedge.exe VMware'" Guid="ffe8aa8d-96bd-461b-9251-6bf6d4faf05c" InformativeScreenshot="1a1fecacc092bcaec640e4c37df5fc83.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='AppLaunchWindow' title='VMware Horizon' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="564, 414, 36, 19" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="566, 414, 34, 19" ElementType="Text" FriendlyName="'Edit'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">text</CSharpReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                    </uix:NGetText>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,187.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+                      <ui:LogMessage.Level>
+                        <InArgument x:TypeArguments="ui:LogLevel">
+                          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Level>
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"Texto obtenido: "+text</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'msedge.exe VMware'" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="564e24da-f9bb-47d1-8fc8-848d633299a1" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://workspacehzex.wal-mart.com/portal/webclient/#/desktop" CvElementArea="1910, 1324, 47, 49" CvType="Icon" DesignTimeRectangle="1908, 1322, 51, 53" DesignTimeScaleFactor="1.5" ElementType="Icon" FriendlyName="'msedge.exe VMware'" Guid="35071e42-aff8-4629-aa3c-fe6a17677576" ImageBase64="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" InformativeScreenshot="9e4267f405d6c26e5cb276475113fb9e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='AppLaunchWindow' title='VMware Horizon' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvElementArea="1978, 1326, 44, 45" CvType="Icon" DesignTimeRectangle="1976, 1324, 48, 49" ElementType="Icon" FriendlyName="'msedge.exe VMware'" ImageBase64="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" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Assignment group'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,248" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="564e24da-f9bb-47d1-8fc8-848d633299a1" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://workspacehzex.wal-mart.com/portal/webclient/#/desktop" CvElementArea="2098, 1017, 468, 52" CvType="InputBox" DesignTimeRectangle="2099, 1017, 437, 51" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'* Assignment group'" Guid="035dabbb-703c-4182-b5dd-a12e9c2d08aa" InformativeScreenshot="400efa5270ac1f376f932f902d2bd4a7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='AppLaunchWindow' title='VMware Horizon' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="1890, 1034, 198, 24" CvTextArgument="* Assignment group" CvType="Text" DesignTimeRectangle="1890, 1033, 198, 24" ElementType="Text" FriendlyName="'* Assignment group'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">text</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 3462, 1402" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANASURBVGhD7ZnbSxRhGMZNO9FJ6eAxsYNRRFAEEXQR1B8QS+Qhzc1LCYIu7Lbr6CLC6CLwwuhkawcrQ6iIvSgqiLAwilAwFXSlg9uFFyq+Pe/szjZ+vjOOfrPjbPTAD8d3v/nmeWa+w7hmEVFGIxYziWm/1D/ZEAJ9gAIKewtZPavmpZOCSCqENUCQ77xKnxRAahhY3AToAnmWz89YPltwTF9OAVLmk5/vUT5fUExftgHs6m459bSczr8JTYNrUtv5YPrzPEDTuzB9+fGKzxf1frjTCCOdOxcg5wCAx7zrYcN318m4qtc9z6ihc5vYlxugWQO4hs33x7u50zmpN/aZwjd2iX3OBuRdgPmYN/Wx/y0dubKZau8Vin3bAXkToP3rBe5MS5een6XQ1U1UdbOEwo/yxeuoQN4EGJuIc2daGvk9SEeby+jYtVIjRN2DAqrvkK9nAukF4NXm5UArd+SJznVWUuX1jVR9u5hq2oqMECc77J8GNL8AvAR+HxvgDjxVpOsiVd0qoZpIkTEf6toR4LHHAZo/nOYT06Job4SO3ymm2ruJu89zwdMn0PhiL5+UNsXig8YwOnG/kMIPne8+A80tgJfj3UlN0UZj+Hg+if1UQ+SA8SQkHyaQ+wA8cf1UtKeNqluLHZdTKLgB+n5+SiylvBLZTGTIfQB+1/FbxmR22JUh9wEYfg32S99Gu42VyGkiQ9MDZOVWrAWFID95vBqsAEtBzsTE5CE+yw+Nj09exjWzcZjyZ8ffg4RRNp4HVoHlYAnIBouS7aIgrZqamorHRka34jDlzYmZhdyKxYDD8E/1LvDfye0gLWLzQ8O/9llu2KykDqRxFmT+B1ho/skAGf/daGZ/O22GwBYeUxoHCfv/D6QKic1rOzgMDoL9YDfYAbaAEsC7NW94K8EykANcr91eIhaZpLEysBOUg1JQAMzXDN6ppc3OV8SilaTRdWA9WAPM9yPRuPLIZ6C210UsSsAwDxPjxQ7YDhfJtBW1vS5iUQfJtBW1vS5iUQfJtBW1vS5iUQfJtBW1vS5iUQfJtBW1vS5iUQfJtBW1vS5i0Q0w06Ka06BFuoYbxKIb+KKKCR38DxAUxGLmQFl/ALXGaxkq8mMEAAAAAElFTkSuQmCC" InformativeScreenshot="f0d1901a3fbe342cbd628d6fc831e246.jpg" Selector="&lt;html app='msedge.exe' htmlwindowname='AppLaunchWindow' title='VMware Horizon' /&gt;" Title="VMware Horizon" Url="https://workspacehzex.wal-mart.com/portal/webclient/#/desktop" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

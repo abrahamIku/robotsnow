@@ -1,0 +1,12 @@
+Column1,Number,Priority,Short description &#40;Knowledge search&#41;,Opened,State,Assigned to Pending reason,Site,Assignment group,Opened by,Updated
+,Search,Search,Search,Search,Search,Search Search,Search,Search,Search,Search
+,INC37198962,= High,MX - Lentitud tienda centralizada,2023-09-15 17:40:37,Closed,(empty),1805.MX,MX-TI-IKUSI,Gabriela Paulino (vn51s36),2023-10-06 14:40:46
+,INC37307144,3 - Medium,MX - Servicio de Radiofrecuencia - Wif Tienda/Club,2023-09-21 09:48:31,Closed,Ruben Velazquez - Vendor (vn562gg),5072.MX,MX IKUSI,Eder Monroy - Vendor (vn5390n),2023-10-19 15:40:30
+,INC37328068,2 - High,MX - Lentitud tienda centralizada,2023-09-22 10:20:56,Closed,(empty),4874.MX,MX-TI-IKUSI,Eder Monroy - Vendor (vn5390n),2023-10-06 14:31:56
+,INC37392259,4 - Low,MX - Switch - Activacion / Revision de Puertos Switch - SD,2023-09-26 11:22:58,Closed,Frances Gonzalez - Vendor (vn56g03),5039.MX,MX-TI-IKUSI,Jair Cureno (vn51mda),2023-10-23 17:31:00
+,INC37417794,5 - Very Low,MX - Terminal GEMINI. OTRA FALLA,2023-09-27 14:31:52,Closed,Ruben Velazquez = Vendor (vn562gg),4772.MX,MX -,Hugo Fernando Solano Martinez (mhfsola),2023-10-24 15:32:57
+,INC37567229,High,"/Remoto/ MX - PC, OTRA FALLA",2023-10-05 13:32:28,Closed,Ruben Velazquez - Vendor (vn562gg),4892.MX,MX - - IKUSI,Hugo Fernando Solano Martinez (mhfsola),2023-10-26 12:43:44
+,INC37592648,= High,MX - Servidor - Falla Smart,2023-10-06 19:23:23,Canceled,(empty),3212.MX,MX - TI - IKUSI,Ivan Najera = Vendor (vn52l4b),2023-10-06 22:17:29
+,INC38110755,High,MX - Falla wif,2023-11-06 16:45:49,Closed,Ruben Velazquez - Vendor (vn562gg),1548.MX,MX - TI - IKUSI,Elizabeth Capilla (vn51s4z),2023-11-14 12:43:38
+,INC38482308,= High,Falla en SMART - Falla de acceso con el usuario smart,2023-11-30 15:23:20,Closed,Oscar Segovia - Vendor (vn562gd),1854.MX,MX - TI - IKUSI,Itzia Patricia Chavez - IOC028X.s01854 (i0c028x.s03468),2023-12-1101:35:41
+,INC38717843,4 - Low,MX - Impresora portatil de piso de venta. NO IMPRIME / ILEGIBLE,2023-12-13 09:36:05,Closed,Ruben Velazquez - Vendor (vn562gg),2086.MX,MX - TI - IKUSI,Walter Galicia (vn51nv3),2023-12-25 11:33:31

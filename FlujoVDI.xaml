@@ -1,0 +1,125 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="FlujoVDI" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1153.3333333333333,869.3333333333334" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="FlujoVDI" sap:VirtualizedContainerService.HintSize="546,804.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Favoritos | Walmart Digital Workspace" sap:VirtualizedContainerService.HintSize="484,694" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b8b18462-9966-4a32-86bf-c540394eef83" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,474.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG-ICON'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b8b18462-9966-4a32-86bf-c540394eef83" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/catalog-portal/ui#/app-favorite" CvElementArea="909, 712, 44, 30" CvType="Icon" DesignTimeRectangle="914, 710, 36, 27" DesignTimeScaleFactor="1.5" FriendlyName="'SVG-ICON'" FullSelectorArgument="&lt;webctrl parentid='favorites' src='./hub-ui/assets/graphics/icon-overflow.svg' tag='SVG-ICON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='favorites' src='./hub-ui/assets/graphics/icon-overflow.svg' tag='SVG-ICON' type='' class='svg-icon icon-overflow' aaname='' /&gt;" Guid="04c1200c-7daf-47ca-aa41-7c77637e48c2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAfCAYAAACVgY94AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADxSURBVFhH7ZO5CsJAFEX9nNi7VK7fICIi2lj4C25NcMVC64hLiE20cAO18teeeYFpZsZoeAopXnFIcrlcDkwmZhhxiDIsSIUFqbAgFRakwoJUWJAKC1JhQSqBguVqHRaWDc7p4T/xW9dLJNPQMSewcs8++I6ZrvvtpuCtYDZfBPf2VMBc7vZHM6WHmdwLsyl4K9hotrRjmMtd53hXepvDVemF2RT8RBBl5N7fBTO5gnYMc7mrO+LeUD3iMJuCz5dkacPO+6Hn1hZKlZq2hxeiO5jCen/xL0nbHHtZStv9dlMQKBgFWJAKC1JhQSoRF4zDC2Pfq+wfZTs3AAAAAElFTkSuQmCC" InformativeScreenshot="c213adfb9af4cac22bd556934f5bcbf8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Favoritos | Walmart Digital Workspace' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="792, 615, 189, 25" CvTextArgument="EDC Virtual Desktop" CvType="Text" DesignTimeRectangle="777, 492, 222, 216" ElementType="Button" FriendlyName="'EDC Virtual Desktop'" FullSelectorArgument="&lt;webctrl aria-label='Iniciar la aplicación EDC Virtual Desktop' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Iniciar la aplicación EDC Virtual Desktop' tag='BUTTON' type='' class='app-launcher-area' aaname='EDC Virtual Desktop' check:innerText='EDC Virtual Desktop' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Iniciar desde navegador'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b8b18462-9966-4a32-86bf-c540394eef83" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/catalog-portal/ui#/app-favorite" CvTextArea="920, 566, 192, 22" CvTextArgument="Iniciar desde navegador" CvType="Text" DesignTimeRectangle="898, 552, 238, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Iniciar desde navegador'" FullSelectorArgument="&lt;webctrl aria-label='Iniciar la aplicación EDC Virtual Desktop a través del navegador' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Iniciar la aplicación EDC Virtual Desktop a través del navegador' tag='BUTTON' type='' class='contextmenu-launch-browser' aaname=' Iniciar desde navegador ' check:innerText='Iniciar desde navegador' /&gt;" Guid="312dc852-ecfb-4790-b46d-2d3fe7cd3d66" InformativeScreenshot="9dd3193f6f37577832dffe8f8db3b59d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Favoritos | Walmart Digital Workspace' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="911, 714, 40, 25" CvType="Icon" DesignTimeRectangle="914, 710, 36, 27" FriendlyName="'SVG-ICON'" FullSelectorArgument="&lt;webctrl parentid='favorites' src='./hub-ui/assets/graphics/icon-overflow.svg' tag='SVG-ICON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='favorites' src='./hub-ui/assets/graphics/icon-overflow.svg' tag='SVG-ICON' type='' class='svg-icon icon-overflow' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAfCAYAAACVgY94AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEYSURBVFhH7ZOxSgNBFEUfSQqrWAbCrpvs7uxuKm1MraCNn2CSVkgbUbBW9CPUL1ALrfy7Ky/sNDOTZJdReMIUh5l9XC4HZh9FUQybSAwUxweQDCVJAsnQaDSGZChNM7hJRUBZlkMypFQBpZRYakG5UFGUkIx8wbKsIBmqqgkkEwR9CYK+/G/B4fkMe8sXdG6/1id/u3L50RT7swf0Vm9r+M4zV7Zpp2aj4Hh6Crr7tuC5me0vnqwcz8xcm07NRsHBxZWzjOdmtnPzaeW61x9Wrk2n5lcEWcbM/blgenziLOO5mW36xG06NQ2W5LX+oZ8xPLt05ngh+vNHdFfv9ZLcIz/ctiS7OzVbBSUQBH0Jgr4EQV+EC07wA9J3PluiufNNAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 3462, 1402" BrowserType="Edge" IconBase64="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" InformativeScreenshot="6d8d150ccadc1c08fad36d5cfc527c12.jpg" Selector="&lt;html app='msedge.exe' title='Favoritos | Walmart Digital Workspace' /&gt;" Title="Favoritos | Walmart Digital Workspace" Url="https://dws.workspaceoneaccess.com/catalog-portal/ui#/app-favorite" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

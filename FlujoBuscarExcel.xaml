@@ -1,0 +1,219 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="FlujoBuscarExcel" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="2166,2006" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>memuplay.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="FlujoBuscarExcel" sap:VirtualizedContainerService.HintSize="1112,1941.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Reporte de avance 2023_ Fase 1 320 sitios PB 1.xlsx" sap:VirtualizedContainerService.HintSize="1050,1830.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1bc35f2c-d9c7-4e79-95a5-0807ba42e561" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1611.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="954,185.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]b[u(ctrl)][u(hk)]" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Buscar'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1bc35f2c-d9c7-4e79-95a5-0807ba42e561" Text="1805" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://euc-excel.officeapps.live.com/x/_layouts/xlviewerinternal.aspx?unified=1&amp;ui=es-ES&amp;rs=en-US&amp;wopisrc=https%3A%2F%2Fvelatia-my.sharepoint.com%2Fpersonal%2Fdevsecops_admin_ikusi_com%2F_vti_bin%2Fwopi.ashx%2Ffiles%2Fd9e042f1899e4239a77a181955cb8b56&amp;wdorigin=OFFICECOM-WEB.MAIN.REC&amp;wdprevioussessionsrc=HarmonyWeb&amp;wdprevioussession=c6e1c31b-d2d2-4e55-a401-82d0124ae9c7&amp;wdenableroaming=1&amp;mscc=1&amp;wdodb=1&amp;hid=3F1414A1-1039-8000-5B95-301D49D3C511.0&amp;uih=sharepointcom&amp;wdlcid=es-ES&amp;jsapi=1&amp;jsapiver=v2&amp;corrid=86aab981-1a40-c0c1-371c-c69d9fb175ee&amp;usid=86aab981-1a40-c0c1-371c-c69d9fb175ee&amp;newsession=1&amp;sftc=1&amp;uihit=docaspx&amp;muv=1&amp;cac=1&amp;sams=1&amp;mtf=1&amp;sfp=1&amp;sdp=1&amp;hch=1&amp;hwfh=1&amp;dchat=1&amp;sc=%7B%22pmo%22%3A%22https%3A%2F%2Fvelatia-my.sharepoint.com%22%2C%22pmshare%22%3Atrue%7D&amp;preseededsessionkey=67d41246-0683-8434-b2f8-86e6ec8651cf&amp;preseededwacsessionid=86aab981-1a40-c0c1-371c-c69d9fb175ee&amp;ctp=LeastProtected&amp;rct=Normal&amp;wdhostclicktime=1710187010969&amp;wdredirectionreason=Force_SingleStepBoot&amp;xlel=1&amp;instantedit=1" CvElementArea="1408, 752, 646, 52" CvType="InputBox" DesignTimeRectangle="1413, 755, 637, 46" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT findTextId'" FullSelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl id='findTextId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl id='findTextId' tag='INPUT' type='text' class='field-512' aaname='Buscar' /&gt;" Guid="f11b2322-72d8-4a9c-a17c-076a6f321051" InformativeScreenshot="081fb85402e453fe1cfa45caea25ef75.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reporte de avance 2023_ Fase 1 320 sitios PB 1.xlsx' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                      <uix:Target CvTextArea="1410, 723, 66, 19" CvTextArgument="Buscar" CvType="Text" DesignTimeRectangle="1412, 709, 639, 45" ElementType="Text" FriendlyName="'Buscar'" FullSelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl id='TextFieldLabel520' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl id='TextFieldLabel520' tag='LABEL' type='' class='ms-Label textContainer root-484' aaname='Buscar' check:innerText='Buscar' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      <uix:Target CvTextArea="1424, 644, 64, 19" CvTextArgument="Buscar" CvType="Text" DesignTimeRectangle="1424, 619, 65, 66" ElementType="Text" FriendlyName="'Buscar'" FullSelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl aaname=' Buscar' parentname='Buscar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl aaname=' Buscar' parentname='Buscar' tag='SPAN' type='' class='ms-Pivot-text text-476' check:innerText='Buscar' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      <uix:Target CvTextArea="1527, 642, 111, 25" CvTextArgument="Reemplazar" CvType="Text" DesignTimeRectangle="1529, 619, 108, 66" ElementType="Text" FriendlyName="'Reemplazar'" FullSelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl aaname=' Reemplazar' parentname='Reemplazar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl aaname=' Reemplazar' parentname='Reemplazar' tag='SPAN' type='' class='ms-Pivot-text text-476' check:innerText='Reemplazar' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Buscar siguiente'" sap:VirtualizedContainerService.HintSize="954,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1bc35f2c-d9c7-4e79-95a5-0807ba42e561" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://euc-excel.officeapps.live.com/x/_layouts/xlviewerinternal.aspx?unified=1&amp;ui=es-ES&amp;rs=en-US&amp;wopisrc=https%3A%2F%2Fvelatia-my.sharepoint.com%2Fpersonal%2Fdevsecops_admin_ikusi_com%2F_vti_bin%2Fwopi.ashx%2Ffiles%2Fd9e042f1899e4239a77a181955cb8b56&amp;wdorigin=OFFICECOM-WEB.MAIN.REC&amp;wdprevioussessionsrc=HarmonyWeb&amp;wdprevioussession=c6e1c31b-d2d2-4e55-a401-82d0124ae9c7&amp;wdenableroaming=1&amp;mscc=1&amp;wdodb=1&amp;hid=3F1414A1-1039-8000-5B95-301D49D3C511.0&amp;uih=sharepointcom&amp;wdlcid=es-ES&amp;jsapi=1&amp;jsapiver=v2&amp;corrid=86aab981-1a40-c0c1-371c-c69d9fb175ee&amp;usid=86aab981-1a40-c0c1-371c-c69d9fb175ee&amp;newsession=1&amp;sftc=1&amp;uihit=docaspx&amp;muv=1&amp;cac=1&amp;sams=1&amp;mtf=1&amp;sfp=1&amp;sdp=1&amp;hch=1&amp;hwfh=1&amp;dchat=1&amp;sc=%7B%22pmo%22%3A%22https%3A%2F%2Fvelatia-my.sharepoint.com%22%2C%22pmshare%22%3Atrue%7D&amp;preseededsessionkey=67d41246-0683-8434-b2f8-86e6ec8651cf&amp;preseededwacsessionid=86aab981-1a40-c0c1-371c-c69d9fb175ee&amp;ctp=LeastProtected&amp;rct=Normal&amp;wdhostclicktime=1710187010969&amp;wdredirectionreason=Force_SingleStepBoot&amp;xlel=1&amp;instantedit=1" CvElementArea="1874, 942, 179, 53" CvTextArea="1905, 959, 117, 21" CvTextArgument="Buscar todo" CvType="Button" DesignTimeRectangle="1896, 945, 138, 46" DesignTimeScaleFactor="1.5" FriendlyName="'Buscar todo'" FullSelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl parentid='DialogSecondaryActionButton' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl parentid='DialogSecondaryActionButton' tag='SPAN' type='' class='ms-Button-flexContainer flexContainer-108' aaname='' check:innerText='Buscar todo' /&gt;" Guid="d058f930-6691-40b1-a4ef-b3ae2461f129" InformativeScreenshot="69445f47c8c1aaa84fe8b5bc656cc0cd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reporte de avance 2023_ Fase 1 320 sitios PB 1.xlsx' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                      <uix:Target CvElementArea="1649, 942, 219, 53" CvTextArea="1679, 959, 158, 25" CvTextArgument="Buscar siguiente" CvType="Button" DesignTimeRectangle="1670, 958, 179, 21" FriendlyName="'Buscar siguiente'" FullSelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl parentid='DialogActionButton' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl parentid='DialogActionButton' tag='SPAN' type='' class='ms-Button-flexContainer flexContainer-108' aaname='' check:innerText='Buscar siguiente' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      <uix:Target CvElementArea="1411, 873, 27, 31" CvTextArea="1440, 878, 222, 25" CvTextArgument="Opciones de busqueda" CvType="ArrowButton" DesignTimeRectangle="1415, 874, 633, 36" ElementType="Button" FriendlyName="'Opciones de búsqueda'" FullSelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl id='pageRangeAccordion' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl id='pageRangeAccordion' tag='DIV' type='' class='' aaname='' check:innerText='Opciones de búsqueda' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Resultados encontrados'" sap:VirtualizedContainerService.HintSize="954,808" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="1bc35f2c-d9c7-4e79-95a5-0807ba42e561" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,586.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LoadImage Image="{x:Null}" DisplayName="Load Image" FileName="imagenesExcelBuscar\\ReporteEncontrado.png" sap:VirtualizedContainerService.HintSize="388,87.33333333333333" sap2010:WorkflowViewState.IdRef="LoadImage_1" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+                    <ui:LogMessage.Level>
+                      <InArgument x:TypeArguments="ui:LogLevel">
+                        <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Level>
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"Si se encuentra la tienda: "</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="Favor de atender el ticket tal:" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="388,156" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Se encuentra la tienda" To="jose.montelongo@ikusi.com;marco.montenegro@ikusi.com">
+                    <ui:SendOutlookMail.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                    </ui:SendOutlookMail.Files>
+                  </ui:SendOutlookMail>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,586.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LoadImage Image="{x:Null}" DisplayName="Load Image" FileName="imagenesExcelBuscar\\NingunResultado.png" sap:VirtualizedContainerService.HintSize="388,87.33333333333333" sap2010:WorkflowViewState.IdRef="LoadImage_2" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+                    <ui:LogMessage.Level>
+                      <InArgument x:TypeArguments="ui:LogLevel">
+                        <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Level>
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"No se encutra la tienda: "</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="No se encutra la tienda tal en el excel." DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="388,156" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="No se encuentra la tienda" To="jose.montelongo@ikusi.com;marco.montenegro@ikusi.com">
+                    <ui:SendOutlookMail.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                    </ui:SendOutlookMail.Files>
+                  </ui:SendOutlookMail>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://euc-excel.officeapps.live.com/x/_layouts/xlviewerinternal.aspx?unified=1&amp;ui=es-ES&amp;rs=en-US&amp;wopisrc=https%3A%2F%2Fvelatia-my.sharepoint.com%2Fpersonal%2Fdevsecops_admin_ikusi_com%2F_vti_bin%2Fwopi.ashx%2Ffiles%2Fd9e042f1899e4239a77a181955cb8b56&amp;wdorigin=OFFICECOM-WEB.MAIN.REC&amp;wdprevioussessionsrc=HarmonyWeb&amp;wdprevioussession=c6e1c31b-d2d2-4e55-a401-82d0124ae9c7&amp;wdenableroaming=1&amp;mscc=1&amp;wdodb=1&amp;hid=3F1414A1-1039-8000-5B95-301D49D3C511.0&amp;uih=sharepointcom&amp;wdlcid=es-ES&amp;jsapi=1&amp;jsapiver=v2&amp;corrid=86aab981-1a40-c0c1-371c-c69d9fb175ee&amp;usid=86aab981-1a40-c0c1-371c-c69d9fb175ee&amp;newsession=1&amp;sftc=1&amp;uihit=docaspx&amp;muv=1&amp;cac=1&amp;sams=1&amp;mtf=1&amp;sfp=1&amp;sdp=1&amp;hch=1&amp;hwfh=1&amp;dchat=1&amp;sc=%7B%22pmo%22%3A%22https%3A%2F%2Fvelatia-my.sharepoint.com%22%2C%22pmshare%22%3Atrue%7D&amp;preseededsessionkey=67d41246-0683-8434-b2f8-86e6ec8651cf&amp;preseededwacsessionid=86aab981-1a40-c0c1-371c-c69d9fb175ee&amp;ctp=LeastProtected&amp;rct=Normal&amp;wdhostclicktime=1710187010969&amp;wdredirectionreason=Force_SingleStepBoot&amp;xlel=1&amp;instantedit=1" CvTextArea="1410, 860, 256, 23" CvTextArgument="Resultados encontrados (1)" CvType="Text" DesignTimeRectangle="1412, 847, 639, 43" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Resultados encontrados'" FullSelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl aaname='Resultados encontrados (1)' parentid='ModalFocusTrapZone594' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl aaname='Resultados encontrados (1)' parentid='ModalFocusTrapZone594' tag='LABEL' type='' class='ms-Label root-484' check:innerText='Resultados encontrados (1)' /&gt;" Guid="3121511e-47dc-4bc6-835b-f757a9c15ce2" InformativeScreenshot="afafbccd889022375b401f1b046752c2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reporte de avance 2023_ Fase 1 320 sitios PB 1.xlsx' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="1440, 804, 220, 26" CvTextArgument="Opciones de busqueda" CvType="Text" DesignTimeRectangle="1444, 807, 218, 30" ElementType="Text" FriendlyName="'Opciones de búsqueda'" FullSelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl parentid='pageRangeAccordion' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='WacFrame_Excel_0' tag='IFRAME' /&gt;&lt;webctrl parentid='pageRangeAccordion' tag='LABEL' type='' class='ms-Label root-502' aaname='Opciones de búsqueda' check:innerText='Opciones de búsqueda' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 3462, 1402" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADkSURBVDhPY0AGiovT3gPxf2zY+EgjNvweqhUCsGmEYSyawRiqFQKwaYRhbJpBmEGgxvE9EP/HhwXrnLFqBmGQAVg1oWPBMDOsLoMbULl1yn8QyFrb8d92aiqY3bFvAcKQQGP8BoDww/fPwfjwvQtgGlmOKAN85haCbQYBEBtZjigDopfWQLX/B7OR5TjsFFD4MAw3QL7FF+58mBdAYjB5ggZMO7YGbLNeTyTcK8iBSNAAQhifAQQTkkC5/X8ePen/EjHmGBiaiCEApAgXFnLVJGwANgWEMFQrBAAF3qMrwI/N3wMAWZLoJAon4YQAAAAASUVORK5CYII=" InformativeScreenshot="d6f1e4239da6f7d8873a536cb3250a0a.jpg" Selector="&lt;html app='msedge.exe' title='Reporte de avance 2023_ Fase 1 320 sitios PB 1.xlsx' /&gt;" Title="Reporte de avance 2023_ Fase 1 320 sitios PB 1.xlsx" Url="https://velatia-my.sharepoint.com/:x:/r/personal/devsecops_admin_ikusi_com/_layouts/15/Doc.aspx?sourcedoc=%7BD9E042F1-899E-4239-A77A-181955CB8B56%7D&amp;file=Reporte%20de%20avance%202023_%20Fase%201%20320%20sitios%20PB%201.xlsx&amp;action=default&amp;mobileredirect=true&amp;DefaultItemOpen=1&amp;ct=1710187010969&amp;wdOrigin=OFFICECOM-WEB.MAIN.REC&amp;cid=36732601-d18b-4343-a86f-e88ec9a5cb4f&amp;wdPreviousSessionSrc=HarmonyWeb&amp;wdPreviousSession=c6e1c31b-d2d2-4e55-a401-82d0124ae9c7" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

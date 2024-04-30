@@ -1,0 +1,536 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WorkspaceWalmart" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_CodeSecurityArgumentWorkspaceWalmart" Type="InArgument(x:String)" />
+    <x:Property Name="out_HorizonFlag" Type="OutArgument(x:Boolean)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>1102,3790</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="WorkspaceWalmart" sap:VirtualizedContainerService.HintSize="1112,3685" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="WalmartFlag" />
+      <Variable x:TypeArguments="x:Boolean" Name="HorizonFlag" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Walmart - Digital Workspace" sap:VirtualizedContainerService.HintSize="1050,3179" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cbf8d619-8272-40be-956f-eecb835e6659" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2882" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="954,65" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <uix:NCheckState DisplayName="Check App State 'Enter your username'" sap:VirtualizedContainerService.HintSize="954,282" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter your username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Text="vn573yv" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/federation/auth/login" CvElementArea="1474, 711, 436, 47" CvType="InputBox" DesignTimeRectangle="1480, 714, 429, 43" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT userInput'" FullSelectorArgument="&lt;webctrl id='userInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='userInput' tag='INPUT' type='text' class='username-input login-input field-input float-field' aaname='                             Enter your username                     ' /&gt;" Guid="cb9081e2-673e-483f-9464-19710a7480db" InformativeScreenshot="cf630887b526b7adcfd82d101fb0493f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="1481, 689, 198, 19" CvTextArgument="Enter your username" CvType="Text" DesignTimeRectangle="1483, 685, 196, 27" ElementType="Text" FriendlyName="'Enter your username'" FullSelectorArgument="&lt;webctrl id='user-name-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='user-name-label' tag='LABEL' type='' class='' aaname='                             Enter your username                     ' check:innerText='Enter your username' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter your username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Text="vn573yv" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/federation/auth/login" CvElementArea="1474, 711, 436, 47" CvType="InputBox" DesignTimeRectangle="1480, 714, 429, 43" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT userInput'" FullSelectorArgument="&lt;webctrl id='userInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='userInput' tag='INPUT' type='text' class='username-input login-input field-input float-field' aaname='                             Enter your username                     ' /&gt;" Guid="090f07af-004e-40ee-9ee5-6b1f2e5e5cc5" InformativeScreenshot="faba69d4969ba632015e293b63a0dfbe.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="1481, 689, 198, 19" CvTextArgument="Enter your username" CvType="Text" DesignTimeRectangle="1483, 685, 196, 27" ElementType="Text" FriendlyName="'Enter your username'" FullSelectorArgument="&lt;webctrl id='user-name-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='user-name-label' tag='LABEL' type='' class='' aaname='                             Enter your username                     ' check:innerText='Enter your username' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/federation/auth/login" CvElementArea="1474, 711, 436, 47" CvType="InputBox" DesignTimeRectangle="1480, 714, 429, 43" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT userInput'" FullSelectorArgument="&lt;webctrl id='userInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='userInput' tag='INPUT' type='text' class='username-input login-input field-input float-field' aaname='                             Enter your username                     ' /&gt;" Guid="0432c1ff-269c-4532-bfc8-20cb99631bdf" InformativeScreenshot="26719abd91a1b93ae81f0eca018ed1ff.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="1481, 689, 198, 19" CvTextArgument="Enter your username" CvType="Text" DesignTimeRectangle="1483, 685, 196, 27" ElementType="Text" FriendlyName="'Enter your username'" FullSelectorArgument="&lt;webctrl id='user-name-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='user-name-label' tag='LABEL' type='' class='' aaname='                             Enter your username                     ' check:innerText='Enter your username' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="954,219" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NKeyboardShortcuts>
+            <uix:NCheckState DisplayName="Check App State 'VIP/YubiKey/GoogleAuth-…'" sap:VirtualizedContainerService.HintSize="954,282" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'VIP/YubiKey/GoogleAuth-…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/authcontrol/auth/request" DesignTimeRectangle="1480, 822, 420, 43" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT passcode'" FullSelectorArgument="&lt;webctrl id='passcode' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='passcode' tag='INPUT' type='password' class='login-input field-input&amp;#xA;                                                                float-field&amp;#xA;                                                             required ' aaname='VIP/YubiKey/GoogleAuth-CCP01' /&gt;" Guid="744718a8-2ae1-4ec1-af9e-f7287d34154a" InformativeScreenshot="0832b3692697a3f5c1a1e0f7c50be355.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="1479, 795, 309, 24" CvTextArgument="VIP/YubiKey/GoogleAuth-CCP01" CvType="Text" DesignTimeRectangle="1483, 793, 308, 27" ElementType="Text" FriendlyName="'VIP/YubiKey/GoogleAuth-…'" FullSelectorArgument="&lt;webctrl id='label-passcode' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-passcode' tag='LABEL' type='' class='' aaname='VIP/YubiKey/GoogleAuth-CCP01' check:innerText='VIP/YubiKey/GoogleAuth-CCP01' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">in_CodeSecurityArgumentWorkspaceWalmart</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                  </uix:NTypeInto>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'VIP/YubiKey/GoogleAuth-…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/authcontrol/auth/request" DesignTimeRectangle="1480, 857, 420, 43" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT passcode'" FullSelectorArgument="&lt;webctrl id='passcode' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='passcode' tag='INPUT' type='password' class='login-input field-input&amp;#xA;                                                                float-field&amp;#xA;                                                             required ' aaname='VIP/YubiKey/GoogleAuth-CCP02' /&gt;" Guid="1d2584b3-642e-47be-a329-e63e8905e8ee" InformativeScreenshot="8ec80e1d6aeab0b6dd9645720caf75aa.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="1479, 831, 312, 24" CvTextArgument="VIP/YubiKey/GoogleAuth-CCP02" CvType="Text" DesignTimeRectangle="1483, 828, 308, 27" ElementType="Text" FriendlyName="'VIP/YubiKey/GoogleAuth-…'" FullSelectorArgument="&lt;webctrl id='label-passcode' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-passcode' tag='LABEL' type='' class='' aaname='VIP/YubiKey/GoogleAuth-CCP02' check:innerText='VIP/YubiKey/GoogleAuth-CCP02' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">in_CodeSecurityArgumentWorkspaceWalmart</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                  </uix:NTypeInto>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/authcontrol/auth/request" DesignTimeRectangle="1480, 857, 420, 43" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT passcode'" FullSelectorArgument="&lt;webctrl id='passcode' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='passcode' tag='INPUT' type='password' class='login-input field-input&amp;#xA;                                                                float-field&amp;#xA;                                                             required ' aaname='VIP/YubiKey/GoogleAuth-CCP01' /&gt;" Guid="1a15a5f6-0f20-41be-a236-0b207ff6aa77" InformativeScreenshot="811c127a7dd2f6b28f7e985cf79e179e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="1479, 831, 309, 24" CvTextArgument="VIP/YubiKey/GoogleAuth-CCP01" CvType="Text" DesignTimeRectangle="1483, 828, 308, 27" ElementType="Text" FriendlyName="'VIP/YubiKey/GoogleAuth-…'" FullSelectorArgument="&lt;webctrl id='label-passcode' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-passcode' tag='LABEL' type='' class='' aaname='VIP/YubiKey/GoogleAuth-CCP01' check:innerText='VIP/YubiKey/GoogleAuth-CCP01' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="954,219" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NKeyboardShortcuts>
+            <uix:NCheckState DisplayName="Check App State 'password'" sap:VirtualizedContainerService.HintSize="954,282" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Text="NrgE5Wvc7)O" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/authcontrol/auth/request" DesignTimeRectangle="1480, 774, 420, 43" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='login-input field-input&amp;#xA;                                                                float-field&amp;#xA;                                                             required ' aaname='password' /&gt;" Guid="9d3f79d1-c683-40fc-a33a-1557f720963c" InformativeScreenshot="9fd35392ad9563b70b839a23cdbe3f9a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="1481, 749, 91, 22" CvTextArgument="password" CvType="Text" DesignTimeRectangle="1483, 745, 90, 27" ElementType="Text" FriendlyName="'password'" FullSelectorArgument="&lt;webctrl id='label-password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-password' tag='LABEL' type='' class='' aaname='password' check:innerText='password' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Text="NrgE5Wvc7)O" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/authcontrol/auth/request" DesignTimeRectangle="1480, 774, 420, 43" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='login-input field-input&amp;#xA;                                                                float-field&amp;#xA;                                                             required ' aaname='password' /&gt;" Guid="82f740d0-4214-4070-a59a-fbfd172310be" InformativeScreenshot="26d6685ed6952abe58fa9701098ef079.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="1481, 749, 91, 22" CvTextArgument="password" CvType="Text" DesignTimeRectangle="1483, 745, 90, 27" ElementType="Text" FriendlyName="'password'" FullSelectorArgument="&lt;webctrl id='label-password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-password' tag='LABEL' type='' class='' aaname='password' check:innerText='password' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/authcontrol/auth/request" DesignTimeRectangle="1480, 774, 420, 43" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='login-input field-input&amp;#xA;                                                                float-field&amp;#xA;                                                             required ' aaname='password' /&gt;" Guid="630dcaee-ddae-47ad-a0e8-0f3f196f5e35" InformativeScreenshot="de2df538dbaa560960e339fec44011ff.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="1481, 749, 91, 22" CvTextArgument="password" CvType="Text" DesignTimeRectangle="1483, 745, 90, 27" ElementType="Text" FriendlyName="'password'" FullSelectorArgument="&lt;webctrl id='label-password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-password' tag='LABEL' type='' class='' aaname='password' check:innerText='password' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="954,219" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NKeyboardShortcuts>
+            <uix:NCheckState DisplayName="Check App State 'Apps'" sap:VirtualizedContainerService.HintSize="954,282" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">WalmartFlag</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">WalmartFlag</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/catalog-portal/ui#/app-favorite" DesignTimeRectangle="732, 547, 252, 283" DesignTimeScaleFactor="1.5" FriendlyName="'EDC Virtual'" FullSelectorArgument="&lt;webctrl aria-label='EDC Virtual Desktop app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='EDC Virtual Desktop app' tag='DIV' type='' class='app-item-container show-actions' aaname='' check:innerText='EDC Virtual Desktop&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Horizon' /&gt;" Guid="96cd8293-cbcd-46cf-ad39-753c294334e5" InformativeScreenshot="ee2e352deb7ed56e2a326a6eb24d84c2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Favorites | Walmart Digital Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="732, 450, 58, 27" CvTextArgument="Apps" CvType="Text" DesignTimeRectangle="688, 414, 2004, 84" FriendlyName="'Apps'" FullSelectorArgument="&lt;webctrl parentid='favorites' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='favorites' tag='DIV' type='' class='content-panel-header standard-border-color' aaname='' check:innerText='Apps' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <If sap:VirtualizedContainerService.HintSize="954,945" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">WalmartFlag</CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,592" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Horizon'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/catalog-portal/ui#/app-favorite" DesignTimeRectangle="884, 780, 36, 27" DesignTimeScaleFactor="1.5" FriendlyName="'SVG-ICON'" FullSelectorArgument="&lt;webctrl parentid='favorites' src='./hub-ui/assets/graphics/icon-overflow.svg' tag='SVG-ICON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='favorites' src='./hub-ui/assets/graphics/icon-overflow.svg' tag='SVG-ICON' type='' class='svg-icon icon-overflow' aaname='' /&gt;" Guid="ffd4d342-7c57-4122-80e6-5480a008045f" InformativeScreenshot="bca713ffc98151a77c7fa7c22f03b2d2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Favorites | Walmart Digital Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                            <uix:Target CvElementArea="727, 538, 259, 297" CvTextArea="774, 788, 66, 18" CvTextArgument="Horizon" CvType="Button" DesignTimeRectangle="777, 784, 63, 24" ElementType="Text" FriendlyName="'Horizon'" FullSelectorArgument="&lt;webctrl aria-label='Horizon' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Horizon' tag='SPAN' type='' class='app-type-text' aaname='Horizon' check:innerText='Horizon' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            <uix:Target DesignTimeRectangle="941, 785, 23, 23" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;div&amp;gt;ng-component&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;favorites&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;app-item&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg-icon&amp;gt;svg&amp;gt;path' idx='2' parentid='favorites' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='favorites' tag='path' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Launch from Browser'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cbf8d619-8272-40be-956f-eecb835e6659" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dws.workspaceoneaccess.com/catalog-portal/ui#/app-favorite" CvTextArea="912, 638, 169, 18" CvTextArgument="Launch from Browser" CvType="Text" DesignTimeRectangle="890, 622, 216, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Launch from Browser'" FullSelectorArgument="&lt;webctrl aria-label='Launch EDC Virtual Desktop app via Browser' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Launch EDC Virtual Desktop app via Browser' tag='BUTTON' type='' class='contextmenu-launch-browser' aaname=' Launch from Browser ' check:innerText='Launch from Browser' /&gt;" Guid="e1156911-5554-4ff4-8064-4d222c69359f" InformativeScreenshot="5ac65a6ef6cc0fa45f0476bc8695e3c7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Favorites | Walmart Digital Workspace' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                            <uix:Target CvTextArea="912, 590, 152, 18" CvTextArgument="Launch from Client" CvType="Text" DesignTimeRectangle="890, 574, 216, 48" ElementType="Button" FriendlyName="'Launch from Client'" FullSelectorArgument="&lt;webctrl aria-label='Launch EDC Virtual Desktop app via Horizon Native Client' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Launch EDC Virtual Desktop app via Horizon Native Client' tag='BUTTON' type='' class='contextmenu-launch-nativeclient' aaname=' Launch from Client ' check:innerText='Launch from Client' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            <uix:Target CvTextArea="911, 686, 99, 18" CvTextArgument="View Details" CvType="Text" DesignTimeRectangle="890, 670, 216, 48" ElementType="Button" FriendlyName="'View Details'" FullSelectorArgument="&lt;webctrl aria-label='View EDC Virtual Desktop detail' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='View EDC Virtual Desktop detail' tag='BUTTON' type='' class='contextmenu-view-detail' aaname=' View Details ' check:innerText='View Details' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">WalmartFlag</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 3462, 1402" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAACCAYAAABR7VzxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABASURBVBhXYwCBvwdN/oIZlAKZ+vv/JUvP50uVX/wvVXbhP0hMu+Eqm1TpuX9g+dJz9tJVN/5LlZytB/EZGBgYALQUFbq5HUyQAAAAAElFTkSuQmCC" InformativeScreenshot="82e3df58c20d4ac5f397f53d34438338.jpg" Selector="&lt;html app='msedge.exe' title='Walmart - Digital Workspace' /&gt;" Title="Walmart - Digital Workspace" Url="https://dws.workspaceoneaccess.com/federation/auth/login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NCheckState DisplayName="Check App State 'Close tab'" sap:VirtualizedContainerService.HintSize="1050,282" sap2010:WorkflowViewState.IdRef="NCheckState_7" Timeout="5" Version="V3">
+      <uix:NCheckState.IfExists>
+        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Boolean">
+                <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">out_HorizonFlag</CSharpReference>
+              </OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </uix:NCheckState.IfExists>
+      <uix:NCheckState.IfNotExists>
+        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Boolean">
+                <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">out_HorizonFlag</CSharpReference>
+              </OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </uix:NCheckState.IfNotExists>
+      <uix:NCheckState.Target>
+        <uix:TargetAnchorable CvTextArea="260, 24, 136, 18" CvTextArgument="VMware Horizon" CvType="Text" DesignTimeRectangle="195, 11, 384, 50" DesignTimeScaleFactor="1.5" ElementType="TabPage" FriendlyName="'Close tab'" FullSelectorArgument="&lt;ctrl name='VMware Horizon - Microsoft Edge' role='pane' /&gt;&lt;ctrl idx='2' name='Tab bar' role='page tab list' /&gt;&lt;ctrl name='VMware Horizon' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='VMware Horizon - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Tab bar' role='page tab list' /&gt;&lt;ctrl name='VMware Horizon' role='page tab' automationid='' check:fulltext='Close tab' /&gt;" Guid="0efed530-cda1-4b06-a74f-a1cbea38db01" InformativeScreenshot="554d2861854495da13a593e33ace1517.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='VMware Horizon - Work - Microsoft​ Edge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+          <uix:TargetAnchorable.Anchors>
+            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+              <uix:Target CvElementArea="150, 18, 32, 31" CvType="Icon" DesignTimeRectangle="143, 14, 48, 42" ElementType="Button" FriendlyName="'Tab actions menu'" FullSelectorArgument="&lt;ctrl name='VMware Horizon - Microsoft Edge' role='pane' /&gt;&lt;ctrl idx='2' name='Tab bar' role='page tab list' /&gt;&lt;ctrl name='Tab actions menu' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='VMware Horizon - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Tab bar' role='page tab list' /&gt;&lt;ctrl name='Tab actions menu' role='push button' automationid='' check:text='Tab actions menu' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAuCAYAAABnNToWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFHSURBVGhD7ZhdykVgEIDd+YklKHuwJyyDEi5sQFmC3KKUBWBN8zXKyVdT53VGnbfTXDwXhvl5iN6Xse87/BIipDsipDsipDsipDsipDsiRDGOI6RpCnEcQxRFt8AczMUaVO27sIWqqgLLssAwDBZYo65rsscdWEJ4V5+QOfE8D5ZlIXupwhLKsowcjENZlmQvVVhCSZKQQ3HAmlQvVVhC+FJTQ3HAmlQvVR4ROr9Y53EYhv9iqmgjdI1xhhIhAhG6IkJvECECEboiQm8QIQKW0Lk43bbtFft0KKyBuV9dnOZ5fgzR9/0r9qlQ13VHblEU5HlVWELTNIHjOBAEAbRtC+u63hbCnKZpwPd9cF0X5nkmr1OFJYTghsw0zUOEg23b39+CnwzDwP5Jgk+bqn2XR4R0QoR0R4R0R4R0R4R0R4R058eEdvgDpVjNu1zt1/gAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, CV" />
+            </scg:List>
+          </uix:TargetAnchorable.Anchors>
+        </uix:TargetAnchorable>
+      </uix:NCheckState.Target>
+    </uix:NCheckState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FlujoHorizonWeb.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1050,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="FlujoHorizonWeb.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="in_HorizonFlag">
+          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">out_HorizonFlag</CSharpValue>
+        </InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>
