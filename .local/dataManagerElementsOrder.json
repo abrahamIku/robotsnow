@@ -239,6 +239,7 @@
       "Path": "FlujoHorizonWebV3.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1",
         "HorizonFlagPage&Sequence_1",
         "HorizonFlag&Sequence_1",
         "HorizonFlag2&Sequence_1",
@@ -248,10 +249,10 @@
         "HorionFlagTabla&Sequence_1",
         "GetTextVDI&Sequence_4",
         "WriteText&Sequence_4",
-        "INC&Sequence_4",
-        "ExtractDataTable&Sequence_12"
+        "INC&Sequence_4"
       ],
       "ArgumentsSectionElementsOrder": [
+        "out_ExtractDataTable",
         "in_HorizonFlag"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -371,6 +372,60 @@
       "Path": "PageCode.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoBuscarExcelVExtractData3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1",
+        "FlagTickets&Sequence_1",
+        "NumeroTicket&Sequence_1",
+        "Priority&Sequence_1",
+        "ShortDescription&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtractData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_ExtractDataTable"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoBuscarExcelVExtractData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1",
+        "FlagTickets&Sequence_1",
+        "NumeroTicket&Sequence_1",
+        "Priority&Sequence_1",
+        "ShortDescription&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlujoNotificacionExcelVExtractData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NumeroTicket&Sequence_1",
+        "Site&Sequence_1",
+        "ShortDescription&Sequence_1",
+        "Priority&Sequence_1",
+        "Description&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
